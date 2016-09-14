@@ -20,3 +20,4 @@ dependencies {
     compile group: 'org.eclipse.jdt', name: 'core', version: '3.3.0-v_771'
     compile 'org.eclipse.jdt:org.eclipse.jdt.core:3.13.0.v20160802-1726'
 }
+

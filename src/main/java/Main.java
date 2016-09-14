@@ -5,103 +5,55 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashSet;
-import java.util.Set;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jdt.core.ICompilationUnit;
-import org.eclipse.jdt.core.IPackageFragment;
-import org.eclipse.jdt.core.IPackageFragmentRoot;
-import org.eclipse.jdt.core.JavaCore;
+import org.eclipse.core.internal.localstore.Bucket;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.ASTVisitor;
 import org.eclipse.jdt.core.dom.CompilationUnit;
-import org.eclipse.jdt.core.dom.MethodDeclaration;
-import org.eclipse.jdt.core.dom.SimpleName;
-import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 
 
-public class Main {
+public class Main
+{
 
-    //use ASTParse to parse string
-    public static void parse(String str) {
-        ASTParser parser = ASTParser.newParser(AST.JLS3);
-        parser.setSource(str.toCharArray());
-        parser.setKind(ASTParser.K_COMPILATION_UNIT);
+    public static void main(String[] args) throws IOException
+    {
+        HalsteadVisitor visitor = new HalsteadVisitor();
+        visitor.ParseFilesInDir();
+        //System.out.println(((HalsteadVisitor)visitor).getOperators().toString());
+        //System.out.println(((HalsteadVisitor)visitor).getNames().toString());
+        Integer n1 = visitor.getNames().keySet().size();
+        Integer n2 = visitor.getOperators().keySet().size();
+        Integer N1 = 0;
+        Integer N2 = 0;
 
-        final CompilationUnit cu = (CompilationUnit) parser.createAST(null);
-
-        cu.accept(new ASTVisitor() {
-
-            Set names = new HashSet();
-
-            public boolean visit(VariableDeclarationFragment node) {
-                SimpleName name = node.getName();
-                this.names.add(name.getIdentifier());
-                System.out.println("Declaration of '" + name + "' at line"
-                        + cu.getLineNumber(name.getStartPosition()));
-                return false; // do not continue
-            }
-
-            public boolean visit(SimpleName node) {
-                if (this.names.contains(node.getIdentifier())) {
-                    System.out.println("Usage of '" + node + "' at line "
-                            + cu.getLineNumber(node.getStartPosition()));
-                }
-                return true;
-            }
-        });
-
-    }
-
-    //read file content into a string
-    public static String readFileToString(String filePath) throws IOException {
-        StringBuilder fileData = new StringBuilder(1000);
-        BufferedReader reader = new BufferedReader(new FileReader(filePath));
-
-        char[] buf = new char[10];
-        int numRead = 0;
-        while ((numRead = reader.read(buf)) != -1) {
-            System.out.println(numRead);
-            String readData = String.valueOf(buf, 0, numRead);
-            fileData.append(readData);
-            buf = new char[1024];
+        for(String key : visitor.getNames().keySet())
+        {
+            N1 += visitor.getNames().get(key);
         }
 
-        reader.close();
-
-        return  fileData.toString();
-    }
-
-    //loop directory to get file list
-    public static void ParseFilesInDir() throws IOException{
-        File dirs = new File(".");
-        String dirPath = dirs.getCanonicalPath() + File.separator+"src"+File.separator +"main" + File.separator+"resources"+File.separator;
-
-        System.out.print(dirPath);
-        File root = new File(dirPath);
-        System.out.println(root.listFiles());
-        File[] files = root.listFiles ( );
-        String filePath = null;
-
-        for (File f : files ) {
-            filePath = f.getAbsolutePath();
-            if(f.isFile()){
-                parse(readFileToString(filePath));
-            }
+        for(String key : visitor.getOperators().keySet())
+        {
+            N2 += visitor.getOperators().get(key);
         }
-    }
+        HalsteadComplexity hc = new HalsteadComplexity(n1,n2,N1,N2);
 
-    public static void main(String[] args) throws IOException {
-        ParseFilesInDir();
+
+
+        System.out.println(
+                "Distinct operands = " + n1 + "\n"
+                + "Distinct operators = " + n2 + "\n"
+                + "Total operands = " + N1 + "\n"
+                + "Total Operators = " + N2 + "\n"
+                + "Program Vocabulary = " + hc.getVocabulary() + "\n"
+                + "Program Length = " + hc.getLength() + "\n"
+                + "Calculated program Length = " + hc.getCalculatedLength() + "\n"
+                + "Volume = " + hc.getVolume() + "\n"
+                + "Difficult = " + hc.getDifficult() + "\n"
+                + "Effort = " + hc.getEffort() + "\n"
+                + "Time required = " + hc.timeRequired() + " seconds\n"
+                + "Bugs delivered = " + hc.deliveredBugs()
+        );
     }
 
 
