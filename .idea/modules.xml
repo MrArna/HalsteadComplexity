@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/creuss2 HW1.iml" filepath="$PROJECT_DIR$/creuss2 HW1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cs474-hw1.iml" filepath="$PROJECT_DIR$/.idea/modules/cs474-hw1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cs474-hw1_main.iml" filepath="$PROJECT_DIR$/.idea/modules/cs474-hw1_main.iml" group="cs474-hw1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cs474-hw1_test.iml" filepath="$PROJECT_DIR$/.idea/modules/cs474-hw1_test.iml" group="cs474-hw1" />
     </modules>
   </component>
 </project>
