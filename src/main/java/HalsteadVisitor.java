@@ -21,7 +21,9 @@ public class HalsteadVisitor extends ASTVisitor
             "+=  -=  *=  /=  &=  |=  ^=  %=  <<=  >>=  >>>=";
 
 
+    //map for the names
     private Map<String, Integer> names = new HashMap<String, Integer>();
+    //map for the operators
     private Map<String, Integer> operators = new HashMap<String, Integer>();
 
     private CompilationUnit cu;
@@ -36,6 +38,16 @@ public class HalsteadVisitor extends ASTVisitor
         super();
     }
 
+
+    /**
+     * @param map: the map to be updated
+     * @param key: the value into the map to be updated
+     *
+     * The method update the value of a given key in a given map.
+     * If the key exists its value is incremented by 1,
+     * if NOT a new pair (key,1) is added to the given map.
+     *
+     */
     private void updateMap(Map<String,Integer> map, String key)
     {
         if(map.containsKey(key))
@@ -49,6 +61,9 @@ public class HalsteadVisitor extends ASTVisitor
     }
 
 
+    //List of useful implementation of the visit method, used by the AST traversor.
+    //Called only when the node of the the declared type is reached
+    //In order to add more operator options, add more visit methods
     public boolean visit(VariableDeclarationFragment node)
     {
         SimpleName name = node.getName();
@@ -97,7 +112,12 @@ public class HalsteadVisitor extends ASTVisitor
         return true;
     }
 
-    //use ASTParse to parse string
+
+    /**
+     * @param str: String to be parsed
+     *
+     * Exploits the ASTParser in order to parse a String, via compilation
+     */
     public void parse(String str)
     {
         ASTParser parser = ASTParser.newParser(AST.JLS3);
@@ -110,7 +130,14 @@ public class HalsteadVisitor extends ASTVisitor
 
     }
 
-    //read file content into a string
+
+    /**
+     * @param filePath String representing the path of the file to be put into a string
+     * @return String, the file into String
+     * @throws IOException thrown when the file is not found
+     *
+     * The method reads a file and put it into a String.
+     */
     public String readFileToString(String filePath) throws IOException
     {
         StringBuilder fileData = new StringBuilder(1000);
@@ -129,22 +156,35 @@ public class HalsteadVisitor extends ASTVisitor
         return  fileData.toString();
     }
 
-    //loop directory to get file list
-    public void ParseFilesInDir() throws IOException
+    /**
+     * @param dirPath String, representing the URI of the dir
+     * @return the number of file in the dir
+     * @throws IOException Thrown if the path is incorrect
+     *
+     * Recursively parse the file in a given dir and its sub dirs.
+     */
+    public int parseFilesInDir(String dirPath) throws IOException
     {
-        File dirs = new File(".");
-        String dirPath = dirs.getCanonicalPath() + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator;
 
         File root = new File(dirPath);
         File[] files = root.listFiles();
         String filePath = null;
+        int numFile = 0;
 
         for (File f : files) {
             filePath = f.getAbsolutePath();
-            if (f.isFile()) {
+            //Recursive visit if f is a dir
+            if (f.isFile())
+            {
                 parse(readFileToString(filePath));
+                numFile++;
+            }
+            if(f.isDirectory())
+            {
+                numFile += parseFilesInDir(f.getPath());
             }
         }
+        return numFile;
     }
 
     public Map<String, Integer> getNames()

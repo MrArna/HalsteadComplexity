@@ -1,5 +1,10 @@
 /**
  * Created by Marco on 14/09/16.
+ *
+ * This class return the measures of the Halstead complexity.
+ * For further indormation visit: https://en.wikipedia.org/wiki/Halstead_complexity_measures
+ *
+ *
  */
 public class HalsteadComplexity
 {
@@ -15,6 +20,7 @@ public class HalsteadComplexity
         this.totalOperands = totalOperands;
         this.totalOperators = totalOperators;
     }
+
 
     public Double getVocabulary() {
         return (double) distinctOperands + distinctOperators;
