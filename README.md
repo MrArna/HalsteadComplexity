@@ -17,7 +17,7 @@ In detail, it's composed by 3 classes:
 
 Further information about the methods and their behaviors can be found in the comment inside the code.
 
-Behaviour
+Functionalities
 ----------------
 
 Usage
