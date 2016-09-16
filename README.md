@@ -31,11 +31,12 @@ It's important that the path doesn't contain white spaces.
 
 Test
 ----------------
-## JUnit
+#### JUnit
 All the tests were made automated by using JUnit. In particular a test suite for each of the *HalsteadComplexity* and the *HalsteadVisitor* class were made. Each methods of both of them was tested except for the visitor methods since they were already safe. These tests are executed over a simple test case inside the resources folder. They ensure the correctness of the classes and their methods.
 
-## Other test
+#### Other test
 Another test, in order to validate the overall application, was made running it over a project retrieved from [OpenHub](https://www.openhub.net). The following java application, a game developed in Java, was evaluated using the Halstead Complexity measures: [Marauroa](https://www.openhub.net/p/marauroa).
+
 Acknowledgments
 ---------------
 Some inspiration was taken by the [Eclipse JDT Tutorial](http://www.programcreek.com/2011/01/best-java-development-tooling-jdt-and-astparser-tutorials/). The code was rewritten and readapted in order to implement the described functionalities.
