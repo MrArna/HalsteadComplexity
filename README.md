@@ -28,6 +28,7 @@ The application parse Java files up to JSL8 version. It identifies the basic 36 
  +=  -=  *=  /=  &=  |=  ^=  %=  <<=  >>=  >>>=`
 
 And their operands, such as variables and functions.
+As names are considered only variables and methods declared by the user.
 
 Usage
 ----------------
