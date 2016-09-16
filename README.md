@@ -1,4 +1,4 @@
-CS441 @ UIC: HOMEWORK1
+CS474 @ UIC: HOMEWORK1
 ====================
 Developed by Marco Arnaboldi (marnab2@uic.edu)
 
