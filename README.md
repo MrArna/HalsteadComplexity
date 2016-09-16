@@ -33,9 +33,9 @@ As names are considered only variables and methods declared by the user.
 Usage
 ----------------
 
-To use the application open the terminal and type as the following snippet of code:
+To use the application, open the terminal and type as the following snippet of code, from the folder where the jar is located:
 
-`java HW1_ArnaboldiMarco path/to/your/project/root`
+`java -jar cs474-hw1-HW1-ArnaboldiMarco-1.1.jar path/to/project/root`
 
 It's important that the path doesn't contain white spaces.
 
