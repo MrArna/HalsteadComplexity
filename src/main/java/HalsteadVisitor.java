@@ -183,7 +183,7 @@ public class HalsteadVisitor extends ASTVisitor
         for (File f : files) {
             filePath = f.getAbsolutePath();
             //Recursive visit if f is a dir
-            if (f.isFile())
+            if (f.isFile() && f.getName().contains(".java"))
             {
                 parse(readFileToString(filePath));
                 numFile++;

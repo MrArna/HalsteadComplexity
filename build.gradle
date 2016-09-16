@@ -1,5 +1,5 @@
 group 'edu.uic'
-version '1.0-SNAPSHOT'
+version 'HW1-ArnaboldiMarco'
 
 apply plugin: 'java'
 apply plugin: 'idea'

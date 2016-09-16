@@ -30,7 +30,7 @@ public class HalsteadVisitorTest {
         assertEquals(visitor.readFileToString(dirPath + "/test.java"),"import java.util.ArrayList;\n" +
                 " \n" +
                 "public class Apple {\n" +
-                "\tprivate  int prova (){\n" +
+                "\tprivate  int prova (int c){\n" +
                 "\t\ta = b + c;\n" +
                 "\t}\n" +
                 "\tpublic static void main(String[] args) {\n" +
@@ -42,7 +42,7 @@ public class HalsteadVisitorTest {
                 "\t\tg++;\n" +
                 "\t\tg = g + prova();\n" +
                 "\t\tg = j + f + (al - g + p);\n" +
-                "\t\tif(g <= prova())\n" +
+                "\t\tif(g <= prova(a))\n" +
                 "\t\tSystem.out.println(j + j);\n" +
                 "\t\tSystem.out.println(al);\n" +
                 "\t}\n" +
@@ -59,7 +59,7 @@ public class HalsteadVisitorTest {
     public void parse() throws Exception
     {
         visitor.parseFilesInDir(dirPath);
-        assertEquals(visitor.getNames().keySet().size(),8);
+        assertEquals(visitor.getNames().keySet().size(),10);
         assertEquals(visitor.getOperators().keySet().size(),5);
     }
 

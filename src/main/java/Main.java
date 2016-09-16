@@ -10,12 +10,12 @@ import static java.lang.System.exit;
 public class Main
 {
 
-    public static void main(String[] args) throws IOException
+    public static void main(String[] args)
     {
 
-        if(args.length != 2)
+        if(args.length != 1)
         {
-            System.out.println("Wrong usage. \n \n" + args[0] + " path/to/project/root/");
+            System.out.println("Wrong usage. \n \n HW1_ArnaboldiMarco path/to/project/root/");
             exit(0);
         }
 
@@ -23,9 +23,14 @@ public class Main
         //File dirs = new File(".");
         //String dirPath = dirs.getCanonicalPath() + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator;
 
-        String dirPath = args[1];
+        String dirPath = args[0];
 
-        visitor.parseFilesInDir(dirPath); //parsing recursively the files in the given dir
+        try {
+            visitor.parseFilesInDir(dirPath); //parsing recursively the files in the given dir
+        } catch (IOException e) {
+            System.out.println("Invalid path");
+            exit(0);
+        }
 
         //the number of distinct operands [n1] || operators [n2] is the number of respective keys in the map
         //System.out.println(visitor.getNames().toString());
