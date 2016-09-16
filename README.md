@@ -30,3 +30,4 @@ All the tests were made automated by using JUnit. In particular a test suite for
 
 Acknowledgments
 ---------------
+Some inspiration was taken by the [Eclipse JDT Tutorial](http://www.programcreek.com/2011/01/best-java-development-tooling-jdt-and-astparser-tutorials/). The code was rewritten and readapted in order to implement the described functionalities.
