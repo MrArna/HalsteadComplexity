@@ -8,7 +8,7 @@ The application measures the [Halstead Complexity](https://en.wikipedia.org/wiki
 
 Development & Design choices
 -----------------
-The application was developed with IntelliJ. It has been designed in order to be as extendable as possible.
+The application was developed with IntelliJ, with the use Gradle in order to manage the libraries. It has been designed in order to be as extendable as possible.
 In detail, it's composed by 3 classes:
 
 + **Main**: this is the the core of the application, where the other classes are instantiated and used
@@ -19,6 +19,15 @@ Further information about the methods and their behaviors can be found in the co
 
 Functionalities
 ----------------
+
+The application parse Java files up to JSL8 version. It identifies the basic 36 operators.
+
+`=   >   <   !   ~   ?   :   -> 
+ ==  >=  <=  !=  &&  ||  ++  --
+ +   -   *   /   &   |   ^   %   <<   >>   >>>
+ +=  -=  *=  /=  &=  |=  ^=  %=  <<=  >>=  >>>=`
+
+And their operands, such as variables and functions.
 
 Usage
 ----------------
