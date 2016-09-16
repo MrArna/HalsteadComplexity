@@ -12,13 +12,6 @@ import java.util.Map;
  */
 public class HalsteadVisitor extends ASTVisitor
 {
-
-    private final String operands = "=   >   <   !   ~   ?   :   -> " +
-            "==  >=  <=  !=  &&  ||  ++  -- " +
-            "+   -   *   /   &   |   ^   %   <<   >>   >>> " +
-            "+=  -=  *=  /=  &=  |=  ^=  %=  <<=  >>=  >>>=";
-
-
     //map for the names
     private Map<String, Integer> names = new HashMap<String, Integer>();
     //map for the operators
