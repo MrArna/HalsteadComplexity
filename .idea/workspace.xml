@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b94fc44d-b4a3-4778-9e2e-c7dcacc87550" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_org_eclipse_core_contenttype_3_4_100.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_org_eclipse_core_expressions_3_4_300.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_org_eclipse_core_filesystem_1_3_100.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_org_eclipse_core_jobs_3_5_100.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_org_eclipse_core_resources_3_7_100.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_org_eclipse_core_runtime_3_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_equinox_org_eclipse_equinox_app_1_3_100.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_equinox_org_eclipse_equinox_common_3_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_equinox_org_eclipse_equinox_preferences_3_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_equinox_org_eclipse_equinox_registry_3_5_101.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jdt_core_compiler_ecj_4_5_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_osgi_org_eclipse_osgi_3_7_1.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_expressions_3_3_0_v20070606_0010.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_filesystem_1_1_0_v20070606.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_resources_3_3_0_v20070604.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jdt_core_3_3_0_v_771.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_text_3_3_0_v20070606_0010.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/HalsteadComplexity.class" afterPath="$PROJECT_DIR$/build/classes/main/HalsteadComplexity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/HalsteadVisitor.class" afterPath="$PROJECT_DIR$/build/classes/main/HalsteadVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/Main.class" afterPath="$PROJECT_DIR$/build/classes/main/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/cs474-hw1_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/cs474-hw1_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/cs474-hw1_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/cs474-hw1_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/test.java" afterPath="$PROJECT_DIR$/build/resources/main/test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/HalsteadVisitor.java" afterPath="$PROJECT_DIR$/src/main/java/HalsteadVisitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/test.java" afterPath="$PROJECT_DIR$/src/main/resources/test.java" />
     </list>
     <ignored path="cs474-hw1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,8 +71,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            <state relative-caret-position="45">
+              <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -107,21 +81,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HalsteadVisitor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HalsteadVisitor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/HalsteadVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-54">
-              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+            <state relative-caret-position="349">
+              <caret line="203" column="44" selection-start-line="203" selection-start-column="44" selection-end-line="203" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#607#624#0" expanded="true" />
                 <element signature="e#712#729#0" expanded="true" />
+                <element signature="e#5557#5574#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Test/test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -482,8 +457,8 @@
         <option value="$PROJECT_DIR$/src/main/java/HalsteadComplexity.java" />
         <option value="$PROJECT_DIR$/src/main/resources/test.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/HalsteadVisitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/HalsteadVisitor.java" />
       </list>
     </option>
   </component>
@@ -1205,7 +1180,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1473818038404</updated>
-      <workItem from="1473818042537" duration="23965000" />
+      <workItem from="1473818042537" duration="24301000" />
     </task>
     <servers />
   </component>
@@ -1230,7 +1205,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23965000" />
+    <option name="totallyTimeSpent" value="24301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="34" width="1400" height="779" extended-state="0" />
@@ -1350,22 +1325,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HalsteadVisitor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Test/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#607#624#0" expanded="true" />
-            <element signature="e#712#729#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        <state relative-caret-position="45">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -1373,11 +1344,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Test/test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/HalsteadVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="349">
+          <caret line="203" column="44" selection-start-line="203" selection-start-column="44" selection-end-line="203" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#607#624#0" expanded="true" />
+            <element signature="e#712#729#0" expanded="true" />
+            <element signature="e#5557#5574#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

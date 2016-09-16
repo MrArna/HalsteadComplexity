@@ -198,6 +198,11 @@ public class HalsteadVisitor extends ASTVisitor
 
     public Map<String, Integer> getNames()
     {
+        Map<String,Integer> copy = new HashMap<String, Integer>();
+        for(String key : names.keySet())
+        {
+            copy.put(key, names.get(key)-1);
+        }
         return names;
     }
 

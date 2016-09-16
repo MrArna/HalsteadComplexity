@@ -28,7 +28,7 @@ public class Main
         visitor.parseFilesInDir(dirPath); //parsing recursively the files in the given dir
 
         //the number of distinct operands [n1] || operators [n2] is the number of respective keys in the map
-        System.out.println(visitor.getNames().toString());
+        //System.out.println(visitor.getNames().toString());
 
         Integer n1 = visitor.getNames().keySet().size();
         Integer n2 = visitor.getOperators().keySet().size();
