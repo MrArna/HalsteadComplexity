@@ -15,7 +15,7 @@ msg['Subject'] = "SUBJECT OF THE MAIL"
 body = "YOUR MESSAGE HERE"
 
 try:
-  opts, args = getopt.getopt(argv,"ht:s:b:",["toAddr=","subject=","body="])
+  opts, args = getopt.getopt(sys.argv[1:],"ht:s:b:",["toAddr=","subject=","body="])
 except getopt.GetoptError:
   print 'sendMail.py [-t <toaddr>] [-s <subject>] [-b <body>]'
   sys.exit(2)
@@ -25,7 +25,7 @@ for opt, arg in opts:
      sys.exit()
   elif opt in ("-t", "--toAddr"):
      msg['To'] = arg
-  elif msg[] in ("-s", "--subject"):
+  elif opt in ("-s", "--subject"):
      msg['Subject'] = arg
   elif opt in ("-b", "--body"):
      body = arg

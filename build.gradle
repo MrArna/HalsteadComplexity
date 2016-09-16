@@ -1,10 +1,10 @@
-group 'edu.uic'
+group 'edu.uic.cs474'
 version 'HW1-ArnaboldiMarco'
 
 apply plugin: 'java'
 apply plugin: 'idea'
+apply plugin: 'application'
 
-sourceCompatibility = 1.5
 
 repositories {
     mavenCentral()
