@@ -1,16 +1,10 @@
 /**
  * Created by Marco on 13/09/16.
  */
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 
-import org.eclipse.core.internal.localstore.Bucket;
-import org.eclipse.jdt.core.dom.AST;
-import org.eclipse.jdt.core.dom.ASTParser;
-import org.eclipse.jdt.core.dom.ASTVisitor;
-import org.eclipse.jdt.core.dom.CompilationUnit;
+import static java.lang.System.exit;
 
 
 public class Main
@@ -19,13 +13,23 @@ public class Main
     public static void main(String[] args) throws IOException
     {
 
+        if(args.length != 2)
+        {
+            System.out.println("Wrong usage. \n \n" + args[0] + " path/to/project/root/");
+            exit(0);
+        }
+
         HalsteadVisitor visitor = new HalsteadVisitor(); //instantiation of the visitor
-        File dirs = new File(".");
-        String dirPath = dirs.getCanonicalPath() + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator;
+        //File dirs = new File(".");
+        //String dirPath = dirs.getCanonicalPath() + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator;
+
+        String dirPath = args[1];
 
         visitor.parseFilesInDir(dirPath); //parsing recursively the files in the given dir
 
         //the number of distinct operands [n1] || operators [n2] is the number of respective keys in the map
+        System.out.println(visitor.getNames().toString());
+
         Integer n1 = visitor.getNames().keySet().size();
         Integer n2 = visitor.getOperators().keySet().size();
         Integer N1 = 0; //total operands

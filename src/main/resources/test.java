@@ -1,7 +1,7 @@
 import java.util.ArrayList;
  
 public class Apple {
-	private  int prova (){
+	private  int prova (int c){
 		a = b + c;
 	}
 	public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class Apple {
 		g++;
 		g = g + prova();
 		g = j + f + (al - g + p);
-		if(g <= prova())
+		if(g <= prova(a))
 		System.out.println(j + j);
 		System.out.println(al);
 	}

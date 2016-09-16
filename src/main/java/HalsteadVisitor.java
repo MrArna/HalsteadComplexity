@@ -5,9 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Created by Marco on 14/09/16.
@@ -56,7 +54,14 @@ public class HalsteadVisitor extends ASTVisitor
         }
         else
         {
-            map.put(key, 1);
+            if(map.equals(names))
+            {
+                map.put(key, 0);
+            }
+            else
+            {
+                map.put(key,1);
+            }
         }
     }
 
@@ -74,6 +79,10 @@ public class HalsteadVisitor extends ASTVisitor
     public boolean visit(MethodDeclaration node)
     {
         updateMap(names, node.getName().getIdentifier());
+        for(Object param : node.parameters())
+        {
+            updateMap(names, param.toString().split(" ")[1]);
+        }
         return true;
     }
 
@@ -120,7 +129,7 @@ public class HalsteadVisitor extends ASTVisitor
      */
     public void parse(String str)
     {
-        ASTParser parser = ASTParser.newParser(AST.JLS3);
+        ASTParser parser = ASTParser.newParser(AST.JLS8);
         parser.setSource(str.toCharArray());
         parser.setKind(ASTParser.K_COMPILATION_UNIT);
 
