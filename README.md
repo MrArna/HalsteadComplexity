@@ -46,6 +46,29 @@ All the tests were made automated by using JUnit. In particular a test suite for
 
 #### Other test
 Another test, in order to validate the overall application, was made running it over a project retrieved from [OpenHub](https://www.openhub.net). The following application, a game developed in Java, was evaluated using the Halstead Complexity measures: [Marauroa](https://www.openhub.net/p/marauroa).
+In order to run this test, proceed to the root of the project from the terminal an launch the following command:
+
+`java -jar cs474-hw1-HW1-ArnaboldiMarco-1.1.jar marauroa-3.9.2/`
+
+The result should be as follow:
+
+~~~~
+******* HALSTEAD COMPLEXITY MEASURES *******
+
+Distinct operands = 1702
+Distinct operators = 29
+Total operands = 32546
+Total Operators = 3099
+Program Vocabulary = 1731.0
+Program Length = 35645.0
+Calculated program Length = 18408.473526368212
+Volume = 278849.6756733894
+Difficult = 90939.62068965517
+Effort = 2.53584837351714E10
+Time required = 1.4088046519539666E9 seconds
+Bugs delivered = 92.9498918911298
+*********************************************
+~~~~
 
 Acknowledgments
 ---------------
