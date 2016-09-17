@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b94fc44d-b4a3-4778-9e2e-c7dcacc87550" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sendMail.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cs474-hw1.iws" />
@@ -727,12 +726,12 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.HW1 [build]">
+  <component name="RunManager" selected="Application.Main-with-args">
     <configuration default="false" name="Main-with-args" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="$USER_HOME$/Downloads/marauroa-3.9.2" />
+      <option name="PROGRAM_PARAMETERS" value="./marauroa-3.9.2" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -777,17 +776,6 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="false" name="build" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
-      <module name="cs474-hw1" />
-      <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
-      <method>
-        <option name="Make" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="false" name="HW1 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -805,6 +793,17 @@
         <option name="vmOptions" />
       </ExternalSystemSettings>
       <method />
+    </configuration>
+    <configuration default="false" name="build" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="cs474-hw1" />
+      <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method>
+        <option name="Make" enabled="false" />
+      </method>
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -1271,14 +1270,14 @@
       <item index="0" class="java.lang.String" itemvalue="Application.Main-with-args" />
       <item index="1" class="java.lang.String" itemvalue="Gradle.HW1 []" />
       <item index="2" class="java.lang.String" itemvalue="Gradle.HW1 [build]" />
-      <item index="3" class="java.lang.String" itemvalue="Groovy.build" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.HW1 [clean]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.HW1 [clean]" />
+      <item index="4" class="java.lang.String" itemvalue="Groovy.build" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.HW1 [clean]" />
-        <item index="1" class="java.lang.String" itemvalue="Groovy.build" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Main-with-args" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main-with-args" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.HW1 [clean]" />
+        <item index="2" class="java.lang.String" itemvalue="Groovy.build" />
         <item index="3" class="java.lang.String" itemvalue="Gradle.HW1 [build]" />
         <item index="4" class="java.lang.String" itemvalue="Gradle.HW1 []" />
       </list>
@@ -1300,7 +1299,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1473818038404</updated>
-      <workItem from="1473818042537" duration="31499000" />
+      <workItem from="1473818042537" duration="31551000" />
     </task>
     <servers />
   </component>
@@ -1337,11 +1336,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31499000" />
+    <option name="totallyTimeSpent" value="31551000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="52" y="34" width="1400" height="779" extended-state="1" />
-    <editor active="false" />
+    <frame x="52" y="34" width="1400" height="779" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
