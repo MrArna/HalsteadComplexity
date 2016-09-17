@@ -1,5 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
+import visitor.HalsteadVisitor;
 
 import java.io.File;
 import java.io.IOException;

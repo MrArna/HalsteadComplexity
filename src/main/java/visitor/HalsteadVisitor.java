@@ -1,3 +1,5 @@
+package visitor;
+
 import org.eclipse.jdt.core.dom.*;
 
 import java.io.BufferedReader;
@@ -24,7 +26,7 @@ public class HalsteadVisitor extends ASTVisitor
         super();
         this.cu = cu;
     }
-    HalsteadVisitor()
+    public HalsteadVisitor()
     {
         super();
     }

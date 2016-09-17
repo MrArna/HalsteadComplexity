@@ -1,3 +1,5 @@
+package measure;
+
 /**
  * Created by Marco on 14/09/16.
  *
@@ -14,7 +16,7 @@ public class HalsteadComplexity
     private Integer totalOperators;
 
 
-    HalsteadComplexity(Integer numDistinctOp, Integer numDistinctOpr, Integer totalOperands, Integer totalOperators) {
+    public HalsteadComplexity(Integer numDistinctOp, Integer numDistinctOpr, Integer totalOperands, Integer totalOperators) {
         this.distinctOperands = numDistinctOp;
         this.distinctOperators = numDistinctOpr;
         this.totalOperands = totalOperands;
