@@ -52,7 +52,8 @@ In order to run this test, proceed to the root of the project from the terminal 
 
 The result should be as follow:
 
-`******* HALSTEAD COMPLEXITY MEASURES *******
+~~~~
+******* HALSTEAD COMPLEXITY MEASURES *******
 
 Distinct operands = 1702
 Distinct operators = 29
@@ -67,7 +68,7 @@ Effort = 2.53584837351714E10
 Time required = 1.4088046519539666E9 seconds
 Bugs delivered = 92.9498918911298
 *********************************************
-`
+~~~~
 
 Acknowledgments
 ---------------
