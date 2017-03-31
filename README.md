@@ -1,6 +1,6 @@
-CS474 @ UIC: HOMEWORK1
+HALSTEAD COMPLEXITY
 ====================
-Developed by Marco Arnaboldi (marnab2@uic.edu)
+Developed by Marco Arnaboldi (marnab2@uic.edu) as CS474 @ UIC: HOMEWORK1
 
 Description
 --------------------
